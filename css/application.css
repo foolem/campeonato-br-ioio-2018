@@ -4,6 +4,11 @@
   font-family: 'Ubuntu', sans-serif;
   color: #B2BFB8;
 }
+.container {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
 .header {
   display: block;
   width: 90%;
@@ -26,6 +31,9 @@
   text-transform: uppercase;
   margin: 0 0.7rem;
 }
+.btn:first-child {
+  margin-left: 50px;
+}
 .btn-sign-up {
   color: white;
   border-radius: 10px;
@@ -40,5 +48,50 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 2.5rem;
-  padding-top:40px;
+  padding:50px 0;
+}
+.results h2 {
+  line-height: 120px;
+}
+.results img:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+.when img {
+  width: 100%;
+}
+.where {
+
+}
+.schedule {
+ background-color: #f3f3f3;
+ padding: 50px 50px;
+}
+.schedule-block {
+  display: block;
+  margin: 0 auto;
+}
+.schedule h2 {
+  font-size: 3rem;
+  line-height: 110px;
+  color: #808080;
+}
+.schedule h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #808080;
+}
+.schedule img {
+  display: inline-block;
+  margin-left: 5%;
+}
+.schedule-time {
+  display: inline-block;
+  margin-left: 5%;
+  vertical-align: top;
+}
+.container-auto {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
 }
