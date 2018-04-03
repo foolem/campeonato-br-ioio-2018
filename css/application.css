@@ -61,7 +61,7 @@
 }
 .schedule {
  background-color: #f3f3f3;
- padding: 50px 50px;
+ padding: 50px 0;
 }
 .schedule-block {
   display: block;
@@ -270,6 +270,9 @@ header .mobile .mobile-menu-toggle:hover {
     width: 280px;
     height: 23px;
   }
-
+  .schedule h2 {
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
 
 }
