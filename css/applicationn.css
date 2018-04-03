@@ -65,7 +65,7 @@
 }
 .schedule-block {
   display: block;
-  margin: 0 30px;
+  margin: 0 auto;
   text-align: center;
 }
 .schedule h2 {
@@ -82,6 +82,7 @@
 }
 .schedule img {
   display: inline-block;
+  vertical-align: bottom;
 }
 .schedule-time {
   display: inline-block;
@@ -144,7 +145,103 @@
   color: white
 }
 
-@media (max-width: 767px) {
+.mobile {
+  display: none;
+}
+
+header .mobile ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #b2bfb8;
+
+}
+header .mobile ul li {
+  float: left;
+}
+header .mobile a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0 20px 0 20px;
+  line-height: 60px;
+  color: #fff;
+  text-decoration: none;
+  border-right: 1px solid #b2bfb8;
+}
+header .mobile a:hover {
+  background: #b2bfb8;
+  color: #828f88;
+}
+header .mobile a:active, header .mobile a:focus {
+  background: #b2bfb8;
+  color: #828f88;
+}
+header .mobile a.home {
+  float: left;
+}
+header .mobile .mobile-menu-checkbox {
+  display: none;
+}
+header .mobile .mobile-menu-toggle {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  line-height: 60px;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: all .3s ease;
+  color: #b2bfb8;
+}
+header .mobile .mobile-menu-toggle:hover {
+  background: #b2bfb8;
+  color: #cedad4;
+}
+@media screen and (max-width: 800px) {
+  .mobile {
+    display: block;
+  }
+  header .mobile ul {
+    position: fixed;
+    top: -400px;
+    width: 100%;
+    transition: all .3s ease;
+    z-index: 3;
+    opacity: 0;
+  }
+  header .mobile ul li {
+    float: none;
+  }
+  header .mobile ul li a {
+    display: block;
+    border-top: 1px solid #b2bfb8;
+    border-right: none;
+  }
+  header .mobile .mobile-menu-checkbox:checked ~ ul {
+    top: 60px;
+    opacity: 100;
+  }
+  header .mobile .mobile-menu-toggle {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+  footer .footer-left-side h3{
+    text-align: center;
+    margin-left: 0;
+  }
+  footer .footer-right-side{
+    text-align: center;
+
+  }
+  footer .footer-right-side span {
+    margin-right: 0;
+  }
+
   .btn {
     font-size: 1rem;
     display: inline-block;
@@ -163,12 +260,16 @@
   .logo {
     margin: 0;
   }
-}
-@media (min-width: 768px) {
-  .btn {
-    font-size: 1.3rem;
+  h3 {
+    font-size: 1.5rem !important;
   }
-  #video-section {
-    display: block;
+  h2 {
+    font-size: 2rem !important;
   }
+  .footer-left-side img {
+    width: 280px;
+    height: 23px;
+  }
+
+
 }
