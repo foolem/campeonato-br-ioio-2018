@@ -10,25 +10,22 @@
   margin: 0 auto;
 }
 .header {
-  display: block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 240px;
   margin: 0 auto;
 }
 .logo {
-  display: inline-block;
   margin-right:30px;
 }
-.navbar {
-  display: inline-block;
-  vertical-align: middle;
-}
 .btn {
-  display: inherit;
   height: 100%;
   font-size: 1.6rem;
   color: #B2BFB8;
   text-transform: uppercase;
   margin: 0 0.7rem;
+  text-decoration: none;
 }
 .btn:first-child {
   margin-left: 50px;
@@ -145,4 +142,33 @@
   font-size: 1.5rem;
   margin-right: 25px;
   color: white
+}
+
+@media (max-width: 767px) {
+  .btn {
+    font-size: 1rem;
+    display: inline-block;
+  }
+  .btn:first-child {
+    margin-left: 0px;
+  }
+  #video-section {
+    display: none;
+  }
+  .header {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .logo {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1.3rem;
+  }
+  #video-section {
+    display: block;
+  }
 }
