@@ -61,7 +61,7 @@
 }
 .schedule {
  background-color: #f3f3f3;
- padding: 50px 0;
+ padding: 50px 30px;
 }
 .schedule-block {
   display: block;
@@ -233,6 +233,7 @@ header .mobile .mobile-menu-toggle:hover {
   footer .footer-left-side h3{
     text-align: center;
     margin-left: 0;
+    font-size: 1.2rem;
   }
   footer .footer-right-side{
     text-align: center;
@@ -261,18 +262,28 @@ header .mobile .mobile-menu-toggle:hover {
     margin: 0;
   }
   h3 {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
   }
   h2 {
-    font-size: 2rem !important;
+    font-size: 2rem ;
   }
   .footer-left-side img {
     width: 280px;
     height: 23px;
   }
   .schedule h2 {
-    line-height: 40px;
+    line-height: 50px;
     margin-bottom: 30px;
+  }
+  .schedule-time h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .schedule-time {
+    margin-left: 0;
+  }
+  .container {
+    width: 85%;
   }
 
 }
